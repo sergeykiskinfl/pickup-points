@@ -1,0 +1,75 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(30, 35, 36);
+}
+
+#root {
+  height: 100vh;
+  height: 100dvh;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  margin: 0;
+}
+
+.map {
+  margin: 14px 12px;
+  flex: 1;
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+  }
+
+  .map {
+    margin: 14px 12px 14px 0px;
+  }
+}
+
+.card-container {
+  flex: 1;
+}
+
+.card {
+  height: 65px;
+  background-color: rgb(48, 56, 57);
+  padding: 12px;
+  margin: 14px 12px;
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 18px;
+  color: rgb(3, 4, 4);
+}
+
+.current-card {
+  border: solid 2px rgb(139, 150, 155);
+}
+
+.badge {
+  background-color: rgb(23, 35, 36);
+  font-size: 14px;
+  color: rgb(139, 150, 155);
+  padding: 6px 10px;
+  margin-right: 12px;
+}
+
+.badge-container {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: row;
+}
